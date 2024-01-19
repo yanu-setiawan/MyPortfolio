@@ -26,8 +26,8 @@ const Header = () => {
       <header
         className={`${
           header
-            ? " py-4 bg-white shadow-lg dark:bg-accent"
-            : " py-6 dark:bg-transparent"
+            ? " py-5 bg-white backdrop-blur-2xl shadow-lg dark:bg-transparent"
+            : " py-5 dark:bg-transparent bg-transparent backdrop-blur-2xl"
         } sticky top-0 z-30 transition-all ${
           pathname === "/" && "bg-[#fef9f5]"
         }`}
@@ -39,7 +39,7 @@ const Header = () => {
               {/* Nav */}
               <Nav
                 containerStyles="hidden xl:flex gap-x-8 items-center"
-                linkStyles="relative hover:text-primary transition-all"
+                linkStyles="relative hover:text-primary transition-all font-medium"
                 underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
               />
               <ThemeToggler />

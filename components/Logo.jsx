@@ -7,7 +7,7 @@ const Logo = () => {
       <Link href={"/"}>
         <Image
           className=" rounded-md"
-          src="/Y.svg"
+          src="/Y fix.svg"
           width={50}
           height={40}
           priority
